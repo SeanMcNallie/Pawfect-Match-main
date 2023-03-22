@@ -7,6 +7,7 @@ const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
 const PORT = process.env.PORT || '8080';
+app.listen(PORT);
 const app = express();
 const server = new ApolloServer({
   typeDefs,
